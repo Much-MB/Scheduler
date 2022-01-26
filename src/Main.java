@@ -34,7 +34,7 @@ public class Main {
                 break;
             case 3:
                 scheduler = new RR();
-                System.out.println("enter quantum : ");
+                System.out.println("Enter quantum : ");
                 quantum = scanner.nextInt();
                 scanner.nextLine();
 
@@ -68,10 +68,10 @@ public class Main {
         }
         CPU cpu = new CPU(scheduler);
 
-        System.out.println("Enter task number");
+        System.out.println("How many task you have ?");
         int taskNumber = scanner.nextInt();
         scanner.nextLine();
-        System.out.println("enter Task info");
+        System.out.println("Enter Task info");
 
         for (int i = 0; i < taskNumber; i++) {
             Task task = null;

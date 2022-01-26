@@ -42,7 +42,7 @@ public class ResourceManager {
             }
         }
     }
-    // if resource hast
+    // if there is an available resourses
     public synchronized boolean assignResources(Task task) {
         int aR = 0;
         int bR = 0;

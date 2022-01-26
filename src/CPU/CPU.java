@@ -41,7 +41,7 @@ public class CPU {
 
         scheduler.schedule(queueManager.getReady());
         printUnit.print();
-        // ta vaqti core busy bud OR Ready OR wating khali shodan
+        //until the cores are busy or ready and waiting queues are empty
         while (queueManager.getReadySize() > 0 || queueManager.getWaitingSize() > 0
                 || isBusyThreads()) {
             scheduler.schedule(queueManager.getReady());

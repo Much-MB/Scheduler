@@ -40,13 +40,13 @@ public class Core extends Thread {
     }
 
     public void checkTaskStatus() {
-        // age task idle bud
+        // if the task was IDLE
         if (activeTask == null) {
             return;
         }
         //age RR bud
         if (algorithm == SchedulerAlgorithm.RR) {
-            // b quantum age resid
+            //if its quantum be finished
             if (taskQuantum == quantum) {
                 resourceManager.freeResources(activeTask);
                 CPU.waitingScheduler.schedule();
